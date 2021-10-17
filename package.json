@@ -1,0 +1,24 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-jwt": "ts-node-dev jwtGenerator.ts",
+    "gen-passwords": "ts-node-dev passwordGenerator.ts",
+    "crack": "ts-node-dev crack.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "ts-node-dev": "^1.1.8"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/node": "^16.11.0"
+  }
+}
