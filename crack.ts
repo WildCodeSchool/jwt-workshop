@@ -4,10 +4,9 @@ import { enc } from "crypto-js";
 
 const passwords: string[] = JSON.parse(fs.readFileSync("passwords", "utf-8"));
 
-const jwt =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTYzNDQ2OTc0M30.FrdBW4AiF0-hh4BFP-4f7gyWkjbEHxlXnfVXrygIsVY"
-    .replaceAll("-", "+")
-    .replaceAll("_", "/") + "=";
+let jwt: string = fs.readFileSync("jwt", "utf-8");
+
+jwt = jwt.replaceAll("-", "+").replaceAll("_", "/") + "=";
 
 const originalHeaderAndPayload = jwt.split(".")[0] + "." + jwt.split(".")[1];
 

@@ -1,3 +1,8 @@
 import jwt from "jsonwebtoken";
+import * as fs from "fs";
 
-console.log(jwt.sign({ role: "student" }, "code"));
+try {
+  fs.writeFileSync("jwt", jwt.sign({ role: "student" }, "code"));
+} catch (err) {
+  console.error(err);
+}
