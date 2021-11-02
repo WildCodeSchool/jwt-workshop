@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gen-jwt": "ts-node-dev jwtGenerator.ts",
     "gen-passwords": "ts-node-dev passwordGenerator.ts",
-    "crack": "ts-node-dev crack.ts"
+    "crack": "ts-node-dev crack.ts",
+    "better-crack": "ts-node-dev better_crack.ts"
   },
   "author": "",
   "license": "ISC",
