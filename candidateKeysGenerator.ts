@@ -44,7 +44,7 @@ const multiPass = (characters: string[], length: number) => {
 };
 
 try {
-  fs.writeFileSync("passwords", JSON.stringify(multiPass(characters, 4)));
+  fs.writeFileSync("candidateKeys", JSON.stringify(multiPass(characters, 4)));
 } catch (err) {
   console.error(err);
 }
